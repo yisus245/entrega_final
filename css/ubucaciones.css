@@ -1,0 +1,75 @@
+/* Inicio de estilos del mapa*/
+.mapa{
+ text-align: center;
+ width: 100%;
+ height: 450px;
+ margin: 10px;
+}
+
+.mapa .submapa{
+    width: 1400px;
+}
+
+/* Fin de estilos del mapa*/
+/* Inicio de estilos del cuerpo del mapa*/
+.flex-container{
+    /* border: 1px solid black;*/
+    /*background: #ccc;*/
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.caja{
+    /*border: 1px solid rgb(70, 69, 69);*/
+    /*background-color: white;*/
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.caja h1{
+    font-size: 30px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.caja h2{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.caja .imgfacebook{
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.caja .imgtienda{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10%;
+}
+/* Fin de estilos del cuerpo del mapa*/
+@media(max-width:576px){
+    .mapa .submapa{
+        width: 500px;
+        height: 400px;
+        margin: 10px;
+    }
+}

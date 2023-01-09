@@ -1,0 +1,189 @@
+/* Inicio del estilo de los contenedores*/
+.flex-container{
+    /*border: 1px solid black;
+    background: #ccc;*/
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.caja{
+    border: 1px solid rgba(70, 69, 69);
+    /*background-color: white;*/
+    background-image: url(../img/fondo_texto.jpg);
+    object-fit: cover;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 750px;
+    height: 330px;
+    /*line-height: 120px;*/
+    text-align: center;
+    margin: 5px;
+}
+
+.cajaBanner{
+    /*border: 1px solid rgba(70, 69, 69);
+    background-color: white;
+    color: black;*/
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 750px;
+    height: 330px;
+    /*line-height: 120px;*/
+    text-align: center;
+    margin: 5px;
+}
+
+/* Fin del estilo de los contenedores*/
+/* Inicio del estilo de los titulos y contenodo*/
+.caja h1{
+    font-size: 40px;
+}
+
+.caja p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+/* Fin del estilo de los titulos y contenodo*/
+/* Inicio del estilo de los banners */
+.bannerTamales{
+    width: 700px;
+    height: 300px;
+    border: 3px solid red;
+    margin: 5px;
+    background-size: 100% 100%;
+    animation: bannerTamales 10s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes bannerTamales {
+    0%, 30%{
+        background-image: url(../img/banner_tamales.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url(../img/banner_tamales2.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(../img/banner_tamales3.jpg);
+    }
+}
+
+.bannerCarne{
+    width: 700px;
+    height: 300px;
+    border: 3px solid red;
+    margin: 5px;
+    background-size: 100% 100%;
+    animation: bannerCarne 10s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes bannerCarne {
+    0%, 30%{
+        background-image: url(../img/banner_carne.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url(../img/banner_carne2.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(../img/banner_carne3.jpg);
+    }
+}
+
+.bannerTacos{
+    width: 700px;
+    height: 300px;
+    border: 3px solid red;
+    margin: 5px;
+    background-size: 100% 100%;
+    animation: bannerTacos 10s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes bannerTacos {
+    0%, 30%{
+        background-image: url(../img/banner_tacos.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65%{
+        background-image: url(../img/banner_tacos2.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(../img/banner_tacos3.jpg);
+    }
+}
+
+/* Fin del estilo de los banners */
+@media(max-width:576px){
+    .bannerTamales{
+        width: 250px;
+        height: 350px;
+        border: 3px solid red;
+        margin: 5px;
+        background-size: 100% 100%;
+        animation: bannerTamales 10s infinite;
+        animation-direction: alternate;
+    
+    }
+    .bannerCarne{
+        width: 250px;
+        height: 350px;
+        border: 3px solid red;
+        margin: 5px;
+        background-size: 100% 100%;
+        animation: bannerTamales 10s infinite;
+        animation-direction: alternate;
+    
+    }
+    .bannerTacos{
+        width: 250px;
+        height: 350px;
+        border: 3px solid red;
+        margin: 5px;
+        background-size: 100% 100%;
+        animation: bannerTamales 10s infinite;
+        animation-direction: alternate;
+    
+    }
+    .caja h1{
+        font-size: 30px;
+    }
+    
+    .caja p{
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+}
